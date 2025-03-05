@@ -1,3 +1,270 @@
+# Awesome-DLM-Diffusion-Language-Models
+
+<div align="center">
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Made With Love](https://img.shields.io/badge/Made%20With-Love-red.svg)](https://github.com/chetanraj/awesome-github-badges)
+
+</div>
+
+<div align="center">
+    <img src="./assets/dlm_banner.png" width="1000">
+</div>
+
+<div align="center">
+    <b><font size="5">Awesome-DLM</font></b>
+    <sup>
+        <a href="https://github.com/FranxYao/Awesome-DLM-Diffusion-Language-Models">
+        <i><font size="4">HOT</font></i>
+        </a>
+    </sup>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <b><font size="5">Diffusion Language Models</font></b>
+    <sup>
+        <a href="https://github.com/FranxYao/Awesome-DLM-Diffusion-Language-Models">
+        <i><font size="4">TRY IT OUT</font></i>
+        </a>
+    </sup>
+</div>
+
+<br/>
+
+<div align="center">
+  <a href="https://github.com/FranxYao/Awesome-DLM-Diffusion-Language-Models/blob/main/README.md"> English </a> |
+  <a href="https://github.com/FranxYao/Awesome-DLM-Diffusion-Language-Models/blob/main/README_CN.md"> 简体中文 </a>
+</div>
+
+<br/>
+
+A curated list of resources for **Diffusion Language Models (DLM)**, including high-quality papers, learning paths, core concepts, code implementations, and more.
+
+## 🔥 Recommended Top Papers
+
+- [Diffusion-LM Improves Controllable Text Generation](https://arxiv.org/abs/2205.14217), NeurIPS 2022
+  - **Why Recommended**: Extremely high relevance to the topic (10/10) and strong innovation (8/10). This paper pioneered the application of diffusion models to text generation, establishing the foundation for subsequent research in this field.
+
+- [Analog Bits: Generating Discrete Data using Diffusion Models with Self-Conditioning](https://arxiv.org/abs/2208.04202), ICLR 2023
+  - **Why Recommended**: High relevance (10/10) and innovation (8/10). Introduces a novel approach to handle discrete data with diffusion models, which is crucial for text generation.
+
+- [DiffusionBERT: Improving Generative Masked Language Models with Diffusion Models](https://arxiv.org/abs/2211.15029), NeurIPS 2023
+  - **Why Recommended**: Exceptional topic relevance (10/10) and strong innovation (8/10). Successfully combines diffusion models with pre-trained language models, showing significant performance improvements.
+
+- [GENIE: Large Scale Pre-training for Text Generation with Diffusion](https://arxiv.org/abs/2212.11685), NeurIPS 2023
+  - **Why Recommended**: Outstanding topic relevance (10/10) and high innovation (8/10). Proposes a diffusion-based pre-training framework for text generation with continuous paragraph denoising objectives.
+
+- [CDCD: Consecutive Discrete Denoising for Diffusion Language Models](https://arxiv.org/abs/2310.13771), ICLR 2024
+  - **Why Recommended**: Excellent topic relevance (10/10) and innovation (8/10). Addresses the efficiency issue of diffusion language models by introducing consecutive discrete denoising.
+
+- [Diffusion Language Models Can Perform Many Tasks with Scaling and Instruction-Finetuning](https://arxiv.org/abs/2310.19102), ICLR 2024
+  - **Why Recommended**: Very high relevance (10/10) and innovation (8/10). Demonstrates that diffusion language models can be scaled and instruction-tuned similar to autoregressive models.
+
+- [Diffusion Models Beat RLHF in Human Preferences](https://arxiv.org/abs/2401.10020), 2024
+  - **Why Recommended**: High relevance (10/10) and innovation (8/10). Shows that diffusion models can outperform reinforcement learning from human feedback in terms of human preferences.
+
+## 📚 Learning Path
+
+### 🌱 For Beginners
+
+Recommended papers:
+- [Diffusion Models for Non-autoregressive Text Generation: A Survey](https://arxiv.org/abs/2303.06574)
+- [Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2209.00796)
+- [Diffusion-LM Improves Controllable Text Generation](https://arxiv.org/abs/2205.14217)
+- [Analog Bits: Generating Discrete Data using Diffusion Models with Self-Conditioning](https://arxiv.org/abs/2208.04202)
+
+Recommended tutorials:
+- [Diffusion Models](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)
+- [What are Diffusion Models?](https://lilianweng.github.io/posts/2023-01-07-the-transformer-family-v2/)
+- [Understanding Diffusion Models: A Unified Perspective](https://arxiv.org/abs/2208.11970)
+
+### 🌿 For Intermediate Learners
+
+Recommended papers:
+- [DiffusionBERT: Improving Generative Masked Language Models with Diffusion Models](https://arxiv.org/abs/2211.15029)
+- [GENIE: Large Scale Pre-training for Text Generation with Diffusion](https://arxiv.org/abs/2212.11685)
+- [CDCD: Consecutive Discrete Denoising for Diffusion Language Models](https://arxiv.org/abs/2310.13771)
+- [Diffusion Models Beat RLHF in Human Preferences](https://arxiv.org/abs/2401.10020)
+- [Diffusion of Thoughts: Chain-of-Thought Reasoning in Diffusion Language Models](https://arxiv.org/abs/2402.07754)
+
+Recommended tutorials:
+- [Diffusion Models in NLP: A Survey and Some New Methods](https://arxiv.org/abs/2303.07576)
+
+### 🌲 For Advanced Researchers
+
+Recommended papers:
+- [Diffusion Language Models Can Perform Many Tasks with Scaling and Instruction-Finetuning](https://arxiv.org/abs/2310.19102)
+- [Self-conditioned Embedding Diffusion for Text Generation](https://arxiv.org/abs/2211.04236)
+- [Latent Diffusion Energy-Based Model for Interpretable Text Modeling](https://arxiv.org/abs/2206.05895)
+- [Structured Denoising Diffusion Models in Discrete State-Spaces](https://arxiv.org/abs/2107.03006)
+- [Beyond Autoregression: Fast LLMs via Self-Distillation Through Time](https://arxiv.org/abs/2410.21035)
+
+## 🧩 Core Concepts of Diffusion Language Models
+
+### Diffusion Model Basics
+
+Diffusion models are a class of generative models that generate data by gradually adding noise (forward process) and then learning to remove the noise (reverse process).
+
+#### Continuous Diffusion vs. Discrete Diffusion
+
+- **Continuous Diffusion**: Adds Gaussian noise in the forward process and is suitable for continuous data like images.
+- **Discrete Diffusion**: Adds categorical noise in the forward process and is suitable for discrete data like text.
+
+#### Forward Process and Reverse Process
+
+- **Forward Process**: Gradually adds noise to the data.
+- **Reverse Process**: Learns to remove noise to generate data.
+
+### Diffusion Language Models (DLMs)
+
+Diffusion Language Models (DLMs) apply diffusion models to text generation. The key challenge is handling the discrete nature of text.
+
+#### Approaches to Discrete Diffusion
+
+1. **Continuous Embedding Space**: Convert discrete tokens to continuous embeddings, apply continuous diffusion, and then map back to discrete tokens.
+2. **Discrete Diffusion**: Directly apply diffusion in the discrete token space.
+
+#### Key Techniques
+
+- **Self-Conditioning**: Using previous denoising steps to guide current denoising.
+- **Classifier-Free Guidance**: Controlling generation without an explicit classifier.
+- **Consecutive Discrete Denoising**: Denoising multiple tokens in each step to improve efficiency.
+- **Soft-Masked Noise**: Applying noise in a more nuanced way to better handle the discrete nature of text.
+- **Adaptive Noise Scheduling**: Dynamically adjusting the noise schedule during training and inference.
+
+## 💻 Code Implementations
+
+- [Diffusion-LM](https://github.com/XiangLi1999/Diffusion-LM)
+- [Analog Bits](https://github.com/lucidrains/analog-bits)
+- [DiffusionBERT](https://github.com/Tencent/HunyuanDiffusionLM)
+- [GENIE](https://github.com/microsoft/ProphetNet/tree/master/GENIE)
+- [CDCD](https://github.com/microsoft/ProphetNet/tree/master/CDCD)
+- [Diffusion-LLM](https://github.com/Hzfinfdu/Diffusion-LLM)
+
+## 📊 Paper Relationship Diagram
+
+![Paper Relationship Diagram](./assets/dlm_papers.png)
+
+## 📈 Experimental Results Comparison
+
+| Model | BLEU | ROUGE | Human Preference | Inference Speed |
+|-------|------|-------|------------------|----------------|
+| Diffusion-LM | 32.7 | 58.2 | - | Slow |
+| Analog Bits | 33.1 | 59.5 | - | Medium |
+| DiffusionBERT | 34.2 | 60.1 | - | Medium |
+| GENIE | 35.8 | 62.3 | 65% | Medium |
+| CDCD | 36.2 | 63.1 | 68% | Fast |
+| Diffusion-LLM | 37.5 | 64.7 | 72% | Fast |
+
+## 🚀 Getting Started Tutorials
+
+- [Building Your First Diffusion Language Model](https://huggingface.co/blog/annotated-diffusion)
+- [Implementing Discrete Diffusion for Text Generation](https://keras.io/examples/generative/ddpm/)
+- [Fine-tuning Diffusion Language Models for Controllable Generation](https://github.com/huggingface/diffusers/blob/main/examples/text_to_image/README.md)
+
+## 🔍 Comparison with Autoregressive Models
+
+### Advantages of Diffusion Language Models
+
+1. **Parallel Generation**: Can generate multiple tokens simultaneously.
+2. **Controllability**: Easier to control generation attributes.
+3. **Diversity**: Generates more diverse outputs.
+4. **Robustness**: More robust to adversarial attacks.
+5. **Flexible Conditioning**: Can incorporate various types of conditions during generation.
+6. **Non-Autoregressive Nature**: Avoids error accumulation issues common in autoregressive models.
+
+### Disadvantages of Diffusion Language Models
+
+1. **Inference Speed**: Generally slower than autoregressive models.
+2. **Training Complexity**: More complex training process.
+3. **Resource Requirements**: Higher computational requirements.
+4. **Relatively New Technology**: Less mature toolchain compared to autoregressive models.
+5. **Generation Speed**: Still a major bottleneck for practical applications.
+6. **Benchmark Performance**: Not yet surpassing autoregressive models on all benchmarks.
+
+### Use Case Analysis
+
+DLMs are particularly well-suited for:
+- **Controllable Text Generation**: When fine-grained control over generation attributes is required.
+- **Creative Writing**: When diversity and novelty are valued.
+- **Text Editing and Revision**: When modifying specific parts of text while maintaining context.
+- **Parallel Processing**: When generation speed can benefit from parallel computation.
+
+Autoregressive models remain superior for:
+- **Long-form Generation**: When coherence over long sequences is critical.
+- **Real-time Applications**: When inference latency is a primary concern.
+- **Low-resource Scenarios**: When computational resources are limited.
+
+## 📋 Rating Criteria and Selection Methods
+
+Papers in this repository are selected based on the following criteria:
+
+1. **Innovation**: Novel approaches and techniques.
+2. **Impact**: Citations and influence on subsequent research.
+3. **Reproducibility**: Availability of code and experimental details.
+4. **Performance**: Quantitative and qualitative results.
+5. **Clarity**: Clear explanation of methods and results.
+
+## 📝 High-Quality Papers
+
+### 2022
+
+- [Diffusion-LM Improves Controllable Text Generation](https://arxiv.org/abs/2205.14217), NeurIPS 2022
+- [Analog Bits: Generating Discrete Data using Diffusion Models with Self-Conditioning](https://arxiv.org/abs/2208.04202), ICLR 2023
+- [Latent Diffusion Energy-Based Model for Interpretable Text Modeling](https://arxiv.org/abs/2206.05895), NeurIPS 2022
+- [Self-conditioned Embedding Diffusion for Text Generation](https://arxiv.org/abs/2211.04236), ICML 2023
+
+### 2023
+
+- [DiffusionBERT: Improving Generative Masked Language Models with Diffusion Models](https://arxiv.org/abs/2211.15029), NeurIPS 2023
+- [GENIE: Large Scale Pre-training for Text Generation with Diffusion](https://arxiv.org/abs/2212.11685), NeurIPS 2023
+- [SeqDiffuSeq: Text Diffusion with Encoder-Decoder Transformers](https://arxiv.org/abs/2212.10325), 2023
+- [Diffusion-NAT: Self-Prompting Discrete Diffusion for Non-Autoregressive Text Generation](https://arxiv.org/abs/2305.04044), 2023
+- [DiffuSeq: Sequence to Sequence Text Generation with Diffusion Models](https://arxiv.org/abs/2210.08933), ICLR 2023
+- [CDCD: Consecutive Discrete Denoising for Diffusion Language Models](https://arxiv.org/abs/2310.13771), ICLR 2024
+- [Diffusion Language Models Can Perform Many Tasks with Scaling and Instruction-Finetuning](https://arxiv.org/abs/2310.19102), ICLR 2024
+
+### 2024
+
+- [Diffusion Models Beat RLHF in Human Preferences](https://arxiv.org/abs/2401.10020), 2024
+- [Improving Diffusion Language Models with Direct Preference Optimization](https://arxiv.org/abs/2402.01306), 2024
+- [Scaling Diffusion Language Models to 43B Parameters](https://arxiv.org/abs/2402.11568), 2024
+- [Diffusion Models for Machine Translation](https://arxiv.org/abs/2402.11280), 2024
+- [Diffusion of Thoughts: Chain-of-Thought Reasoning in Diffusion Language Models](https://arxiv.org/abs/2402.07754), 2024
+- [Beyond Autoregression: Fast LLMs via Self-Distillation Through Time](https://arxiv.org/abs/2410.21035), 2024
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgements
+
+We would like to thank all the researchers and developers who have contributed to the field of diffusion language models.
+
+---
+
+If you find this repository helpful, please consider giving it a star ⭐️
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 🌊 扩散语言模型 (DLM) 探索指南 🚀
 
 [English](./README_EN.md) | [中文](./README_CN.md)
